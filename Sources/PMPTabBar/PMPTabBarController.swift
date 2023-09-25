@@ -43,9 +43,9 @@ open class PMPTabBarController: UITabBarController {
         }
     }
     
-    public var selectedCornerRadius: CGFloat = 0 {
+    public var radius: CGFloat? {
         didSet {
-            cardTabBar.selectedRadius = selectedCornerRadius
+            cardTabBar.selectedRadius = radius ?? 0
         }
     }
     
