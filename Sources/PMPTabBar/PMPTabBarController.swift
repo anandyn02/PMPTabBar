@@ -30,6 +30,19 @@ open class PMPTabBarController: UITabBarController {
             cardTabBar.selectedImageColor = selectedBackGroundColor
         }
     }
+    
+    public var textFont: UIFont? {
+        didSet {
+            cardTabBar.font = textFont
+        }
+    }
+    
+    public var textColor: UIColor? {
+        didSet {
+            cardTabBar.textColor = textColor
+        }
+    }
+    
 }
 
 extension PMPTabBarController {
