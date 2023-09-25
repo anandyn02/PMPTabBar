@@ -41,6 +41,12 @@ class PMPBarItemView: UIControl {
         }
     }
     
+    var radius: CGFloat = 0 {
+        didSet {
+            imageView.layer.cornerRadius = radius
+        }
+    }
+    
     var selectedBackGroundColor: UIColor = .red
     
     init(title: String?, image: UIImage?) {

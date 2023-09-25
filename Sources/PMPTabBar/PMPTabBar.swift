@@ -75,6 +75,11 @@ class PMPTabBar: UITabBar {
         }
     }
     
+    var selectedRadius: CGFloat = 0 {
+        didSet {
+            reloadViews()
+        }
+    }
     
     override var tintColor: UIColor! {
         set { barItemColor = newValue }
@@ -149,6 +154,7 @@ class PMPTabBar: UITabBar {
         buttonView.selectedBackGroundColor = selectedImageColor
         buttonView.textFont = font
         buttonView.textColor = textColor
+        buttonView.radius = selectedRadius
         
         buttonView.addTarget(self, action: #selector(buttonTapped(sender:)), for: .touchUpInside)
 
