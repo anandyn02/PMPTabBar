@@ -109,7 +109,7 @@ class PMPTabBar: UITabBar {
     
     private func setupUI() {
         
-        tintColor = .label
+        tintColor = .white
         backgroundImage = UIImage()
         shadowImage = UIImage()
         setupConstraint()
