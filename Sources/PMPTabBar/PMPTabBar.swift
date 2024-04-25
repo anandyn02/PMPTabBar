@@ -185,6 +185,12 @@ class PMPTabBar: UITabBar {
         layer.shadowRadius = 13
         layer.shadowOpacity = 0.05
     }
+    
+    func forceResetTab() {
+        if let item = stackView.arrangedSubviews[0] as? PMPBarItemView {
+            buttonTapped(sender: item)
+        }
+    }
 
     
     // MARK: - Actions

@@ -49,6 +49,10 @@ open class PMPTabBarController: UITabBarController {
         }
     }
     
+    public func resetTabBar() {
+        cardTabBar.forceResetTab()
+    }
+    
 }
 
 extension PMPTabBarController {
